@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Vet-dom</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <!-- Styles -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header-row row">
+        <div class="container">
+            <div class="header-logo col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                <img src="images/logo.jpg" alt="logo-Img">
+                <p>а<span>й</span>болит пл<span>ю</span>с</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-4 col-xs-0"></div>
+            <div class="numbers col-lg-3 col-md-3 col-sm-4">
+                <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
+                <p>+7 (495) 988-57-24
+                <p>+7 (495) 783-56-84
+            </div>
+        </div>
+    </div>
+    <div class="first-list row">
+        <div class="container">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5">
+                <h1>Мы любим животных!</h1>
+                <br>
+                <p>Все наши врачи искренне любят животных
+                    <br>и пытаются найти выход из любой ситуации!</p>
+                <a class="details enroll" href="http://vet-dom.ru/#wpcf7-f4484-p10-o1">Записаться на прием!</a>
+                <br>
+                <a class="details callback" href="#form-list">Заказать звонок!</a>
+            </div>
+        </div>
+        <!-- <div class="">
+        	<form id="form">
+        		<input type="text" name="name" placeholder="Ваше имя"><br>
+        		<input type="text" name="phone" placeholder="Телефон"><br>
+        		<button>Отправить</button>
+        	</form>
+        </div> -->
+    </div>
+    <div class="second-list">
+        <div class="second-list-block">
+            <span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-medkit fa-stack-1x fa-inverse"></i>
+        </span>
+            <h2>Круглосуточный стационар</h2>
+            <p>Вы можете обратиться в нашу клинику в любое время дня и ночи, мы обязательно поможем!</p>
+            <a class="details" href="#aim">Подробнее</a>
+        </div>
+        <div class="second-list-block">
+            <span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-stethoscope fa-stack-1x fa-inverse"></i>
+        </span>
+            <h2>Прозрачные и доступные цены</h2>
+            <p>Гибкая система скидок для постоянных клиентов и защитников животных.</p>
+            <a class="details" href="http://vet-dom.ru/tseni">Подробнее</a>
+        </div>
+        <div class="second-list-block">
+            <span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-ambulance fa-stack-1x fa-inverse"></i>
+        </span>
+            <h2>Ветеринар на дом круглосуточно</h2>
+            <p>Экстренный вызов специалистов в любое время суток, в том числе и для хирургических операций.</p>
+            <a class="details" href="#aim">Подробнее</a>
+        </div>
+        <div class="second-list-block">
+            <span class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-clock-o fa-stack-1x fa-inverse"></i>
+        </span>
+            <h2>Время работы</h2>
+            <p>5 из 7 наших клиник работают круглосуточно, другие - с 10:00 до 22:00</p>
+            <a class="details" href="#departments">Подробнее</a>
+        </div>
+    </div>
+    <div id="results" class="third-list">
+        <h1>Результаты 15 лет работы клиники:</h1>
+        <div class="third-list-block">
+            <img src="images/team.png" alt="team.png">
+            <p><span>17832</span> клиентов получили квалифицированную помощь</p>
+        </div>
+        <div class="third-list-block">
+            <img src="images/cat.png" alt="cat.png">
+            <p><span>12491</span> кошек выздоровели</p>
+        </div>
+        <div class="third-list-block">
+            <img src="images/dog.png" alt="dog.png">
+            <p><span>13646</span> собак
+                <br>снова обрели здоровье</p>
+        </div>
+        <div class="third-list-block">
+            <img src="images/chat.png" alt="chat.png">
+            <p><span>97%</span> наших клиентов рекомендуют клинику своим друзьям</p>
+        </div>
+    </div>
+    <div class="fourth-list">
+        <h1>6 причин, почему мы лучше других</h1>
+        <div class="fourth-list-block">
+            <img src="images/map.png" alt="map.png">
+            <h2>Расположение</h2>
+            <p>Сеть состоит из 6 центров в Москве и одного в микрогороде "В лесу". В каждом из них Ваш питомец получит полноценную медицинскую помощь.</p>
+        </div>
+        <div class="fourth-list-block">
+            <img src="images/professional.png" alt="professional.png">
+            <h2>Профессионализм</h2>
+            <p>Наша команда состоит из специалистов, высокий уровень профессионализма которых подтвержден многочисленными сертификатами.</p>
+        </div>
+        <div class="fourth-list-block">
+            <img src="images/parrot.png" alt="parrot.png">
+            <h2>Помогаем всем!</h2>
+            <p>Кто сказал, что в ветеринарной клинике лечат только собак и кошек? Мы проводим лечение всех видов животных!</p>
+        </div>
+        <div class="fourth-list-block">
+            <img src="images/cardiogram.png" alt="cardiogram.png">
+            <h2>Эффективность</h2>
+            <p>Многолетний опыт наших сотрудников помогает добиваться максимальных результатов и безукоризненной статистики.</p>
+        </div>
+        <div class="fourth-list-block">
+            <img src="images/microscope.png" alt="microscope.png">
+            <h2>Оборудование</h2>
+            <p>Новейшее оборудование в наших клиниках позволяет с предельной точностью диагностировать заболевания и успешно их лечить.</p>
+        </div>
+        <div class="fourth-list-block">
+            <img src="images/sofa.png" alt="sofa.png">
+            <h2>Комфорт</h2>
+            <p>Вам и Вашему любимцу обеспечено комфортное место ожидания приема у специалиста.</p>
+        </div>
+    </div>
+    <h1 id="aim" class="pre-fifth-list">Ознакомьтесь с перечнем наших услуг</h1>
+    <div class="fifth-list row">
+        <div class="container">
+            <div class="list-bar col-lg-4 col-md-5">
+                <ul class="hidden-991">
+                    <li>
+                        <a class="info-1 attention" href="#aim"><img src="images/ambulance.png" alt="ambulance.png">Вызов ветеринара</a>
+                    </li>
+                    <li>
+                        <a class="info-2" href="#aim"><img src="images/syringe.png" alt="syringe.png">Вакцинация (прививка)</a>
+                    </li>
+                    <li>
+                        <a class="info-3" href="#aim"><img src="images/scalpel.png" alt="scalpel.png">Хирургия</a>
+                    </li>
+                    <li>
+                        <a class="info-4" href="#aim"><img src="images/hospital.png" alt="hospital.png">Стационар в ветклинике</a>
+                    </li>
+                    <li>
+                        <a class="info-5" href="#aim"><img src="images/bone.png" alt="bone.png">Ортопедия и травматология</a>
+                    </li>
+                    <li>
+                        <a class="info-6" href="#aim"><img src="images/stethoscope.png" alt="stethoscope.png">Визуальная диагностика</a>
+                    </li>
+                    <li>
+                        <a class="info-7" href="#aim"><img src="images/tooth-outline.png" alt="tooth-outline.png">Стоматология</a>
+                    </li>
+                    <li>
+                        <a class="info-8" href="#aim"><img src="images/virus.png" alt="virus.png">Онкология</a>
+                    </li>
+                    <li>
+                        <a class="info-9" href="#aim"><img src="images/cardiography.png" alt="cardiography.png">Кардиология</a>
+                    </li>
+                    <li>
+                        <a class="info-10" href="#aim"><img src="images/eyeglasses.png" alt="eyeglasses.png">Офтальмология</a>
+                    </li>
+                    <li>
+                        <a class="info-11" href="#aim"><img src="images/barber.png" alt="barber.png">Другие услуги</a>
+                    </li>
+                </ul>
+                <ul class="visible-991">
+                    <li>
+                        <a class="info-1 attention" href="#text-appears"><img src="images/ambulance.png" alt="ambulance.png">Вызов ветеринара</a>
+                    </li>
+                    <li>
+                        <a class="info-2" href="#text-appears"><img src="images/syringe.png" alt="syringe.png">Вакцинация (прививка)</a>
+                    </li>
+                    <li>
+                        <a class="info-3" href="#text-appears"><img src="images/scalpel.png" alt="scalpel.png">Хирургия</a>
+                    </li>
+                    <li>
+                        <a class="info-4" href="#text-appears"><img src="images/hospital.png" alt="hospital.png">Стационар в ветклинике</a>
+                    </li>
+                    <li>
+                        <a class="info-5" href="#text-appears"><img src="images/bone.png" alt="bone.png">Ортопедия и травматология</a>
+                    </li>
+                    <li>
+                        <a class="info-6" href="#text-appears"><img src="images/stethoscope.png" alt="stethoscope.png">Визуальная диагностика</a>
+                    </li>
+                    <li>
+                        <a class="info-7" href="#text-appears"><img src="images/tooth-outline.png" alt="tooth-outline.png">Стоматология</a>
+                    </li>
+                    <li>
+                        <a class="info-8" href="#text-appears"><img src="images/virus.png" alt="virus.png">Онкология</a>
+                    </li>
+                    <li>
+                        <a class="info-9" href="#text-appears"><img src="images/cardiography.png" alt="cardiography.png">Кардиология</a>
+                    </li>
+                    <li>
+                        <a class="info-10" href="#text-appears"><img src="images/eyeglasses.png" alt="eyeglasses.png">Офтальмология</a>
+                    </li>
+                    <li>
+                        <a class="info-11" href="#text-appears"><img src="images/barber.png" alt="barber.png">Другие услуги</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
+                <div id="text-appears">
+                    <div class="text-appear text-appear-1 hidden-info visible-info row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <p>Наши врачи всегда спешат на помощь</p>
+                            <br>
+                            <img class="img-change visible-1199" src="images/pet-ambulance.jpg" alt="images/pet-ambulance.jpg">
+                            <p>Звоните, оставляйте заявку, и ветврач будет у Вас в ближайшее время. Круглосуточно у нас несут дежурство 4 вызывных ветеринарных врача, а в дневную смену 8 ветврачей.</p>
+                            <a class="details" href="http://vet-dom.ru/vizov">Подробнее</a>
+                        </div>
+                        <div class="col-lg-6 col-md-0 hidden-1199"><img src="images/pet-ambulance.jpg" alt="images/pet-ambulance.jpg"></div>
+                    </div>
+                    <div class="text-appear text-appear-2 hidden-info row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <p>Болезнь лучше предотвратить</p>
+                            <br>
+                            <img class="img-change visible-1199" src="images/vaccination.jpg" alt="images/vaccination.jpg">
+                            <p>Вакцинация – это использование вакцин для профилактики различных инфекционных заболеваний; мера, направленная на создание иммунитета в организме животного к болезням и позволяющая избежать заражения опасным заболеванием либо значительно ослабить его последствия.</p>
+                            <a class="details" href="http://vet-dom.ru/privivka-2">Подробнее</a>
+                        </div>
+                        <div class="col-lg-6 col-md-0 hidden-1199"><img src="images/vaccination.jpg" alt="images/vaccination.jpg"></div>
+                    </div>
+                    <div class="text-appear text-appear-3 hidden-info row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <p>Малоинвазивная хирургия — это к нам!</p>
+                            <br>
+                            <img class="img-change visible-1199" src="images/surgery.jpg" alt="images/surgery.jpg">
+                            <p>Почти все наши клиники способны провести у себя операции любой сложности. Хирургическими центрамим нашей сети, являются ветклиника на Беломорской и «Микрогород в лесу», в этих клиниках у нас есть эндоскопические отделения.
+                                <br>
+                                <br>Также мы проводим и «обычные» операции — стерилизация, кастрация, другие/</p>
+                            <a class="details" href="http://vet-dom.ru/xir">Подробнее</a>
+                        </div>
+                        <div class="col-lg-6 col-md-0 hidden-1199"><img src="images/surgery.jpg" alt="images/surgery.jpg"></div>
+                    </div>
+                    <div class="text-appear text-appear-4 hidden-info row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <p>Послеоперационный стационар для животных</p>
+                            <br>
+                            <img class="img-change visible-1199" src="images/hospital.jpg" alt="images/hospital.jpg">
+                            <p>В каждой ветеринарной клинике должен быть послеоперационный стационар в который помещается животное после операции, а также после любого врачебного вмешательства, требующего введения животного в наркоз.
+                                <br>
+                                <br>Наши врачи всегда стараются отдать питомца только тогда, когда все риски сведены к минимуму, поэтому послеоперационный стационар в наших клиниках бесплатный (на определенный период).</p>
+                            <a class="details" href="http://vet-dom.ru/soderzhanie-zhivotnyh">Подробнее</a>
+                        </div>
+                        <div class="col-lg-6 col-md-0 hidden-1199"><img src="images/hospital.jpg" alt="images/hospital.jpg"></div>
+                    </div>
+                    <div class="text-appear text-appear-5 hidden-info row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <p>С любыми травмами и нарушениями опорно-двигательного аппарата обращайтесь к нам!</p>
+                            <br>
+                            <img class="img-change visible-1199" src="images/orthopedy.jpg" alt="images/orthopedy.jpg">
+                            <p>Сеть ветеринарных клиник Айболит Плюс окажет вашему питомцу качественную помощь. У нас работают квалифицированные специалисты, которые скрупулезно разберутся с проблемой и назначат эффективную терапию.
+                                <br>
+                                <br>Помните, что любая травма или нарушение развития опорно-двигательного аппарата сопровождается симптомами, которые приносят животному боль и страдания. Задача хозяина — вовремя передать своего любимца в руки врачей, которые смогут диагностировать нарушение и начать его лечение</p>
+                            <a class="details" href="http://vet-dom.ru/ortopediya-i-travmatologiya">Подробнее</a>
+                        </div>
+                        <div class="col-lg-6 col-md-0 hidden-1199"><img src="images/orthopedy.jpg" alt="images/orthopedy.jpg"></div>
+                    </div>
+                    <div class="text-appear text-appear-6 hidden-info row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <p>Визуальная диагностика животных</p>
+                            <br>
+                            <img class="img-change visible-1199" src="images/diagnostic.jpg" alt="images/diagnostic.jpg">
+                            <p>В современной ветеринарной практике особое место занимает визуальная диагностика. Это доступный метод, который широко применяется в разных областях выявления заболеваний у животных.
+                                <br>
+                                <br>Благодаря визуальной диагностике врач имеет возможность точно оценить состояние сердечно-сосудистой системы, опорно-двигательной системы, органов брюшной полости.</p>
+                            <a class="details" href="http://vet-dom.ru/vizualnaya-diagnostika">Подробнее</a>
+                        </div>
+                        <div class="col-lg-6 col-md-0 hidden-1199"><img src="images/diagnostic.jpg" alt="images/diagnostic.jpg"></div>
+                    </div>
+                    <div class="text-appear text-appear-7 hidden-info row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <p>Стоматология для домашних животных</p>
+                            <br>
+                            <img class="img-change visible-1199" src="images/dentistry.jpg" alt="images/dentistry.jpg">
+                            <p>Домашние питомцы также часто сталкиваются с заболеваниями ротовой полости, как и человек. Однако животное не может сказать о своей боли, поэтому хозяевам нужно скрупулезно следить за поведением своих любимцев.
+                                <br>
+                                <br>Ветеринарная сеть «Айболит Плюс» настойчиво и последовательно работает над повышением профессионального уровня специалистов и оснащённости клиник самым современным стоматологическим оборудованием.</p>
+                            <a class="details" href="http://vet-dom.ru/stomatologiya-zhivotnyh">Подробнее</a>
+                        </div>
+                        <div class="col-lg-6 col-md-0 hidden-1199"><img src="images/dentistry.jpg" alt="images/dentistry.jpg"></div>
+                    </div>
+                    <div class="text-appear text-appear-8 hidden-info row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <p>Химиотерапия и онкология животных</p>
+                            <br>
+                            <img class="img-change visible-1199" src="images/chemotherapy.jpg" alt="images/chemotherapy.jpg">
+                            <p>Химиотерапия представляет собой распространенный в онкологии метод лечения, который позволяет предотвратить дальнейшее развитие злокачественного новообразования.
+                                <br>
+                                <br>Химиотерапия оказывает негативное влияние на организм животного, по этому стоит подумать над мероприятиями, которые снижают риск возникновения новообразований: кастрация и стерилизация.</p>
+                            <a class="details" href="http://vet-dom.ru/onkologiya">Подробнее</a>
+                        </div>
+                        <div class="col-lg-6 col-md-0 hidden-1199"><img src="images/chemotherapy.jpg" alt="images/chemotherapy.jpg"></div>
+                    </div>
+                    <div class="text-appear text-appear-9 hidden-info row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <p>Ветеринарная кардиология</p>
+                            <br>
+                            <img class="img-change visible-1199" src="images/cardiology.jpg" alt="images/cardiology.jpg">
+                            <p>В практике лечения домашних питомцев кардиологические заболевания составляют значительную часть случаев. Около 10 процентов диагнозов связано с сердечной мышцей. В настоящее время проблема лечения животных с кардиологическими проблемами является очень актуальной.
+                                <br>
+                                <br>При своевременном обращении к врачу больному животному можно на много продлить жизнь.</p>
+                            <a class="details" href="http://vet-dom.ru/kardiologiya">Подробнее</a>
+                        </div>
+                        <div class="col-lg-6 col-md-0 hidden-1199"><img src="images/cardiology.jpg" alt="images/cardiology.jpg"></div>
+                    </div>
+                    <div class="text-appear text-appear-10 hidden-info row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <p>Когда у питомца проблемы со зрением, но помощь приходит ветеринарная офтальмология.</p>
+                            <br>
+                            <img class="img-change visible-1199" src="images/ophthalmology.jpg" alt="images/ophthalmology.jpg">
+                            <p>Первая часть любого лечения, в том числе, и у ветеринарного офтальмоголога — это осмотр. Основные методы офтальмологического осмотра — это офтальмоскопия, биомикроскопия, тест Ширмера, флуоресцентный тест.
+                                <br>
+                                <br>В ветеринарной сети «Айболит Плюс» работают умелые врачи — специалисты-офтальмологи, которые смогут помочь Вашему питомцу!</p>
+                            <a class="details" href="http://vet-dom.ru/veterinarnaya-oftalmologiya">Подробнее</a>
+                        </div>
+                        <div class="col-lg-6 col-md-0 hidden-1199"><img src="images/ophthalmology.jpg" alt="images/ophthalmology.jpg"></div>
+                    </div>
+                    <div class="text-appear text-appear-11 hidden-info row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <p>Ветеринарная клиника Айболит+ предоставляет множество других услуг по уходу и лечению домашних питомцев</p>
+                            <br>
+                            <img class="img-change visible-1199" src="images/others.jpg" alt="images/others.jpg">
+                            <p>В том числе:
+                                <br>
+                                <a href="http://vet-dom.ru/ter"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> терапия;</a>
+                                <br>
+                                <a href="http://vet-dom.ru/endoskopicheskaya-stojka-v-ajbolit-plyus"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> эндоскопия;</a>
+                                <br>
+                                <a href="http://vet-dom.ru/akusher"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> акушерство и гинекология;</a>
+                                <br>
+                                <a href="http://vet-dom.ru/ritualnye-uslugi"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> ритуальные услуги, эвтаназия;</a>
+                                <br>
+                                <a href="http://vet-dom.ru/gruming"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> груминг;</a>
+                                <br>
+                                <a href="http://vet-dom.ru/veterinarnaya-apteka"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> аптека;</a>
+                                <br>
+                                <a href="http://vet-dom.ru/uslugi"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> и многие другие.</a></p>
+                        </div>
+                        <div class="col-lg-6 col-md-0 hidden-1199"><img src="images/others.jpg" alt="images/others.jpg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="departments" class="pre-sixth-list">
+        <h1>Филиалы</h1>
+        <p>7 наших клиник удобно распределены по всей Москве и МО</p>
+    </div>
+    <div class="sixth-list container">
+        <div id="carousel-map" class="carousel slide" data-ride="carousel" data-interval="false">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-map" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-map" data-slide-to="1"></li>
+                <li data-target="#carousel-map" data-slide-to="2"></li>
+                <li data-target="#carousel-map" data-slide-to="3"></li>
+                <li data-target="#carousel-map" data-slide-to="4"></li>
+                <li data-target="#carousel-map" data-slide-to="5"></li>
+                <li data-target="#carousel-map" data-slide-to="6"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="images/carouselBg.jpg" alt="carouselBg">
+                    <div class="carousel-caption">
+                        <div class="info-col col-lg-6 col-md-6">
+                            <div class="clinic-info">
+                                <h2>м. Коломенская</h2>
+                                <br>
+                                <p>ул. Кленовый бульвар, 28</p>
+                                <p>10:00 — 22:00</p>
+                                <p>rezulta@yandex.ru</p>
+                            </div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.7627288916283!2d37.67696352129654!3d55.67572605460632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab49b9e7370d3%3A0x1af66fa6a92aa1e3!2z0JrQu9C10L3QvtCy0YvQuSDQsS3RgCwgMjgsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMTU0NzA!5e0!3m2!1sru!2sua!4v1491976146888" allowfullscreen></iframe>
+                        </div>
+                        <div class="photo-col col-lg-6 col-md-6">
+                            <div id="tokareva" class="kolomenskaya staff-block hidden-info visible-info">
+                                <h2>Главный врач филиала</h2>
+                                <img src="images/doctor_woman.png" alt="tokareva.jpg">
+                                <h2>Токарева Надежда Васильевна</h2>
+                            </div>
+                            <div id="soloveva" class="kolomenskaya staff-block hidden-info">
+                                <h2 class="small">Ветеринарный врач</h2>
+                                <img src="images/soloveva.jpg" alt="soloveva.jpg">
+                                <h2>Соловьева Елена Сергеевна</h2>
+                            </div>
+                            <ol>
+                                <li class="info-tokareva touched"></li>
+                                <li class="info-soloveva"></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/carouselBg.jpg" alt="carouselBg">
+                    <div class="carousel-caption">
+                        <div class="info-col col-lg-6 col-md-6">
+                            <div class="clinic-info">
+                                <h2>м. Волоколамская</h2>
+                                <br>
+                                <p>Пятницкое шоссе, 15к3</p>
+                                <p>Круглосуточно</p>
+                                <p>mitino-vet@mail.ru</p>
+                            </div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.217105756334!2d37.377907315745425!3d55.84154699261169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b547a5c05be187%3A0x1634a02763337a87!2z0J_Rj9GC0L3QuNGG0LrQvtC1INGILiwgMTXQujMsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMjU0NjQ!5e0!3m2!1sru!2sua!4v1491976866726" allowfullscreen></iframe>
+                        </div>
+                        <div class="photo-col col-lg-6 col-md-6">
+                            <div id="mavlyanova" class="volokolamskaya staff-block hidden-info visible-info">
+                                <h2>Управляющий клиники</h2>
+                                <img src="images/mavlyanova.jpg" alt="mavlyanova.jpg">
+                                <h2>Мавлянова Ирина Александровна</h2>
+                            </div>
+                            <div id="archiley" class="volokolamskaya staff-block hidden-info">
+                                <h2 class="small">Ветеринарный врач</h2>
+                                <img src="images/archiley.jpg" alt="archiley.jpg">
+                                <h2 class="small">Архилей Алексей</h2>
+                            </div>
+                            <div id="gurganchov" class="volokolamskaya staff-block hidden-info">
+                                <h2 class="small">Ветеринарный врач</h2>
+                                <img src="images/gurganchov.jpg" alt="gurganchov.jpg">
+                                <h2>Гурганчов Карим Магомедович</h2>
+                            </div>
+                            <ol>
+                                <li class="info-mavlyanova"></li>
+                                <li class="info-archiley"></li>
+                                <li class="info-gurganchov"></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/carouselBg.jpg" alt="carouselBg">
+                    <div class="carousel-caption">
+                        <div class="info-col col-lg-6 col-md-6">
+                            <div class="clinic-info">
+                                <h2>м. Речной Вокзал</h2>
+                                <br>
+                                <p>ул. Беломорская, 1</p>
+                                <p>Круглосуточно</p>
+                                <p>nebolit-vet@mail.ru</p>
+                            </div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2238.9244037215954!2d37.4678463157464!3d55.86397799087969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b53811119319dd%3A0xcdf6db1a6160b6a!2z0YPQuy4g0JHQtdC70L7QvNC-0YDRgdC60LDRjywgMSwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEyNTQ0NQ!5e0!3m2!1sru!2sua!4v1491976798714" allowfullscreen></iframe>
+                        </div>
+                        <div class="photo-col col-lg-6 col-md-6">
+                            <div id="selezneva" class="belomorskaya staff-block hidden-info visible-info">
+                                <h2 class="small">Врач-хирург</h2>
+                                <img src="images/selezneva.jpg" alt="selezneva.jpg">
+                                <h2>Селезнёва Наталья Александровна</h2>
+                            </div>
+                            <div id="mezin" class="belomorskaya staff-block hidden-info">
+                                <h2 class="small">Ветеринарный врач</h2>
+                                <img src="images/mezin.jpg" alt="mezin.jpg">
+                                <h2>Мезин Андрей Владимирович</h2>
+                            </div>
+                            <div id="smirnov" class="belomorskaya staff-block hidden-info">
+                                <h2 class="small">Ветеринарный врач</h2>
+                                <img src="images/doctor_man.png" alt="smirnov.jpg">
+                                <h2>Смирнов Дмитрий Сергеевич</h2>
+                            </div>
+                            <ol>
+                                <li class="info-selezneva"></li>
+                                <li class="info-mezin"></li>
+                                <li class="info-smirnov"></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/carouselBg.jpg" alt="carouselBg">
+                    <div class="carousel-caption">
+                        <div class="info-col col-lg-6 col-md-6">
+                            <div class="clinic-info vern">
+                                <h2>м. Проспект Вернадского</h2>
+                                <br>
+                                <p>ул. Удальцова, 75а</p>
+                                <p>Круглосуточно</p>
+                                <p>7988006@mail.ru</p>
+                            </div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.6471001463824!2d37.49466280913236!3d55.67773664667852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x700776dd1a9cecc3!2z0JDQudCx0L7Qu9C40YIg0J_Qu9GO0YE!5e0!3m2!1sru!2sua!4v1491976690962" allowfullscreen></iframe>
+                        </div>
+                        <div class="photo-col col-lg-6 col-md-6">
+                            <div id="menchikova" class="udaltsova staff-block hidden-info visible-info">
+                                <h2>Главный врач филиала</h2>
+                                <img src="images/menchikova.jpg" alt="menchikova.jpg">
+                                <h2>Менчикова Ирина Сергеевна</h2>
+                            </div>
+                            <div id="peganova" class="udaltsova staff-block hidden-info">
+                                <h2 class="small">Ветеринарный врач</h2>
+                                <img src="images/peganova.jpg" alt="peganova.jpg">
+                                <h2>Пеганова Екатерина Алексеевна</h2>
+                            </div>
+                            <div id="prusakov" class="udaltsova staff-block hidden-info">
+                                <h2 class="small">Ветеринарный врач</h2>
+                                <img src="images/prusakov.jpg" alt="prusakov.jpg">
+                                <h2>Прусаков Дмитрий Георгиевич</h2>
+                            </div>
+                            <ol>
+                                <li class="info-menchikova"></li>
+                                <li class="info-peganova"></li>
+                                <li class="info-prusakov"></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/carouselBg.jpg" alt="carouselBg">
+                    <div class="carousel-caption">
+                        <div class="info-col col-lg-6 col-md-6">
+                            <div class="clinic-info">
+                                <h2>м. Тульская</h2>
+                                <br>
+                                <p>ул. Люсиновская, 53</p>
+                                <p>Круглосуточно</p>
+                                <p>7957255@mail.ru</p>
+                            </div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.3018365491876!2d37.62104361574096!3d55.71850650210433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b1595c9eb91%3A0x6754744fbe7f52e2!2z0JvRjtGB0LjQvdC-0LLRgdC60LDRjyDRg9C7LiwgNTMsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMTUwOTM!5e0!3m2!1sru!2sua!4v1491976908368" allowfullscreen></iframe>
+                        </div>
+                        <div class="photo-col col-lg-6 col-md-6">
+                            <div id="lapot" class="tulskaya staff-block hidden-info visible-info">
+                                <h2 class="small">Врач-терапевт</h2>
+                                <img src="images/lapot.jpg" alt="lapot.jpg">
+                                <h2>Лапоть Сергей Николаевич</h2>
+                            </div>
+                            <div id="zinin" class="tulskaya staff-block hidden-info">
+                                <h2 class="small">Ветеринарный врач</h2>
+                                <img src="images/zinin.jpg" alt="zinin.jpg">
+                                <h2>Зинин Алексей Юрьевич</h2>
+                            </div>
+                            <div id="artemova" class="tulskaya staff-block hidden-info">
+                                <h2 class="small">Ветеринарный врач</h2>
+                                <img src="images/artemova.jpg" alt="artemova.jpg">
+                                <h2>Артёмова Татьяна Сергеевна</h2>
+                            </div>
+                            <ol>
+                                <li class="info-lapot"></li>
+                                <li class="info-zinin"></li>
+                                <li class="info-artemova"></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/carouselBg.jpg" alt="carouselBg">
+                    <div class="carousel-caption">
+                        <div class="info-col col-lg-6 col-md-6">
+                            <div class="clinic-info">
+                                <h2>м. Университет</h2>
+                                <br>
+                                <p>ул. Марии Ульяновой, 19</p>
+                                <p>10:00 — 22:00</p>
+                                <p>vettaklinika@mail.ru</p>
+                            </div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.4218898438994!2d37.52055799564061!3d55.6816525419877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf9042f6421%3A0xc7f806b201dbc38a!2z0JzQsNGA0LjQuCDQo9C70YzRj9C90L7QstC-0Lkg0YPQuy4sIDE5LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzMx!5e0!3m2!1sru!2sua!4v1491976542738" allowfullscreen></iframe>
+                        </div>
+                        <div class="photo-col col-lg-6 col-md-6">
+                            <div id="lazarev" class="universitet staff-block hidden-info visible-info">
+                                <h2 class="small">Врач-терапевт</h2>
+                                <img src="images/lazarev.jpg" alt="lazarev.jpg">
+                                <h2>Лазарев Сергей Викторович</h2>
+                            </div>
+                            <div id="maria" class="universitet staff-block hidden-info">
+                                <h2 class="small">Ветеринарный врач</h2>
+                                <img src="images/doctor_woman.png" alt="maria.jpg">
+                                <h2 class="small">Мария</h2>
+                            </div>
+                            <ol>
+                                <li class="info-lazarev"></li>
+                                <li class="info-maria"></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/carouselBg.jpg" alt="carouselBg">
+                    <div class="carousel-caption">
+                        <div class="info-col col-lg-6 col-md-6">
+                            <div class="clinic-info mosc">
+                                <h2>Московская обл. 7-й км Пятницкого шоссе</h2>
+                                <br>
+                                <p>Микрогород в лесу, 16</p>
+                                <p>Круглосуточно</p>
+                                <p>mikro-gorod@mail.ru</p>
+                            </div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2238.449204875471!2d37.32797166495916!3d55.87222215664407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf66771154d54076!2z0JDQudCx0L7Qu9C40YIg0J_Qu9GO0YE!5e0!3m2!1sru!2sua!4v1491976611226" allowfullscreen></iframe>
+                        </div>
+                        <div class="photo-col col-lg-6 col-md-6">
+                            <div id="jarovaya" class="moskovskaya staff-block hidden-info visible-info">
+                                <h2>Главный ветеринарный врач</h2>
+                                <img src="images/jarovaya.jpg" alt="jarovaya.jpg">
+                                <h2>Яровая Наталья Александровна</h2>
+                            </div>
+                            <div id="konstantinov" class="moskovskaya staff-block hidden-info">
+                                <h2>Врач-хирург</h2>
+                                <img src="images/konstantinov.jpg" alt="konstantinov.jpg">
+                                <h2>Константинов Александр Александрович</h2>
+                            </div>
+                            <div id="lugunaya" class="moskovskaya staff-block hidden-info">
+                                <h2>Врач-терапевт, стоматолог</h2>
+                                <img src="images/lugunaya.jpg" alt="lugunaya.jpg">
+                                <h2>Люгуная Юлия Николаевна</h2>
+                            </div>
+                            <div id="tkachuk" class="moskovskaya staff-block hidden-info">
+                                <h2>Врач-терапевт, кардиолог</h2>
+                                <img src="images/tkachuk.jpg" alt="tkachuk.jpg">
+                                <h2>Ткачук Валентин Валентинович</h2>
+                            </div>
+                            <div id="morozova" class="moskovskaya staff-block hidden-info">
+                                <h2>Администратор клиники</h2>
+                                <img src="images/morozova.jpg" alt="morozova.jpg">
+                                <h2>Морозова Марина Алексеевна</h2>
+                            </div>
+                            <ol>
+                                <li class="info-jarovaya"></li>
+                                <li class="info-konstantinov"></li>
+                                <li class="info-lugunaya"></li>
+                                <li class="info-tkachuk"></li>
+                                <li class="info-morozova"></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-map" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-map" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    
+    <div id="form-list" class="seventh-list row">
+    <div class="container">
+      <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+      	<h1>Закажите обратный звонок!</h1>
+      	<div class="underline"></div>
+    	<p>Есть вопрос, требующий неотложного решения? Хотите записаться на прием? Просто заполните форму и наши специалисты свяжутся с Вами!</p>
+      	<form id="form">
+      	<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="Vet-dom">
+		<input type="hidden" name="admin_email" value="chetvertakkk@yandex.ru">
+		<input type="hidden" name="form_subject" value="Заявка на обратный звонок с лендинга">
+		<!-- END Hidden Required Fields -->
+
+		<input type="text" name="Имя" placeholder="Ваше имя*" autocomplete="off" required>
+        <input type="text" name="Телефон" placeholder="Ваш телефон*" autocomplete="off" required>
+		<input type="email" name="E-mail" placeholder="Ваш e-mail" autocomplete="off">
+		<textarea name="Проблема" placeholder="Причина обращения?" autocomplete="off"></textarea>
+        <p>* Обязательные поля</p>
+		<button>Отправить</button>
+      </form>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 administration">
+          <h2>Администрация</h2>
+          <div class="small-underline"></div>
+          <div class="admin-info">
+          <div class="info">
+              <i class="fa fa-clock-o fa-3x" aria-hidden="true"></i>
+              <p>10:00 — 20:00</p>
+          </div>
+          <div class="info">
+              <i class="fa fa-phone-square fa-3x" aria-hidden="true"></i>
+              <p> +7 495 988-5724</p>
+          </div>
+          <div class="info">
+              <i class="fa fa-globe fa-3x" aria-hidden="true"></i>
+              <p><a href="http://vet-dom.ru">http://vet-dom.ru</a></p>
+          </div>
+          <div class="info">
+              <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+              <p>admin@vet-dom.ru</p>
+          </div>
+          <div class="info">
+              <i class="fa fa-users fa-3x" aria-hidden="true"></i>
+              <p>
+                <a href="https://vk.com/club13265525">Вконтакте</a><br>
+                <a href="https://www.facebook.com/aibolitplus">Фейсбук</a>
+            </p>
+          </div>
+          </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="pre-eighth-list">
+        <h1>Отзывы</h1>
+    </div>
+    <div class="eighth-list container">
+        <div id="carousel-comments" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="images/carouselBg.jpg" alt="carouselBg">
+                    <div class="carousel-caption">
+                        <div class="col-lg-3 col-md-3 col-sm-4">
+                            <img src="images/commentChaustova.jpg" alt="commentChaustova.jpg">
+                        </div>
+                        <div class="full info-col col-lg-9 col-md-9 col-sm-8">
+                            <h2>Дарья Хаустова</h2>
+                            <br>
+                            <p>Ветклиника в Микрогороде в лесу. Мы от всей семьи выражаем благодарность нашему врачу Ткачук Валентин Валентинович. Это действительно призвание, быть врачом! Удивительной широты его профессионализм. Лечимся только у него (так как уже имели дело не с профессионалами) уже два года и не разу не усомнились в его качествах. Руководству клиники стоит отметить данного доктора и премировать за его ответственную работу!!!!!</p>
+                            <p><a class="full-comment" href="#carousel-comments">Свернуть</a></p>
+                        </div>
+                        <div class="preview info-col col-lg-9 col-md-9 col-sm-8">
+                            <h2>Дарья Хаустова</h2>
+                            <br>
+                            <p>Ветклиника в Микрогороде в лесу. Мы от всей семьи выражаем благодарность нашему врачу Ткачук Валентин Валентинович. Это действительно призвание, быть врачом! Удивительной широты его профессионализм.</p>
+                            <p><a class="full-comment" href="#carousel-comments">Далее</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/carouselBg.jpg" alt="carouselBg">
+                    <div class="carousel-caption">
+                        <div class="col-lg-3 col-md-3 col-sm-4">
+                            <img src="images/commentWoman.png" alt="commentWoman.png">
+                        </div>
+                        <div class="full col-lg-9 col-md-9 col-sm-8">
+                            <h2>Юлия Шон</h2>
+                            <br>
+                            <p>Огромное спасибо Пегановой Екатерине Алексеевне за ультразвуковую чистку зубов старенькому ши-тцу ,отлично подобранный препарат для проведения этой болезненной процедуры и рекомендации по содержанию животного. Как говориться врач от бога!!! В одной из клиник поблизости нам просто отказали сославшись на преклонный возраст собаки, в другой объявили стоимость процедуры в 8 раз !!! больше, чем мы оплатили в Айболит+.</p>
+                            <p><a class="full-comment" href="#carousel-comments">Свернуть</a></p>
+                        </div>
+                        <div class="preview col-lg-9 col-md-9 col-sm-8">
+                            <h2>Юлия Шон</h2>
+                            <br>
+                            <p>Огромное спасибо Пегановой Екатерине Алексеевне за ультразвуковую чистку зубов старенькому ши-тцу ,отлично подобранный препарат для проведения этой болезненной процедуры и рекомендации по содержанию животного.</p>
+                            <p><a class="full-comment" href="#carousel-comments">Далее</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/carouselBg.jpg" alt="carouselBg">
+                    <div class="carousel-caption">
+                        <div class="col-lg-3 col-md-3 col-sm-4">
+                            <img src="images/commentMan.png" alt="commentMan.png">
+                        </div>
+                        <div class="full col-lg-9 col-md-9 col-sm-8">
+                            <h2>Олег Молчанов</h2>
+                            <br>
+                            <p>Хочу выразить огромную благодарность мед.персоналу клиники САО Москва ул.Беломорская,1 по Левобережной у району спасибо вам дорогие за вашу работу за понимание и заботу о наших питомцах. Наднях мы простерилизовали нашу кошечку Алису в данной клиентки и люди работающие в ней это отзывчивые благородные врачи люди с душой и пониманием . Спасибо вам и дай вам Бог здоровья и чтоб все питомцы были здоровы . С уважением Олег Молчанов ,Екатерина Красильникова. Спасибо ВАМ!</p>
+                            <p><a class="full-comment" href="#carousel-comments">Свернуть</a></p>
+                        </div>
+                        <div class="preview col-lg-9 col-md-9 col-sm-8">
+                            <h2>Олег Молчанов</h2>
+                            <br>
+                            <p>Хочу выразить огромную благодарность мед.персоналу клиники САО Москва ул.Беломорская,1 по Левобережной у району спасибо вам дорогие за вашу работу за понимание и заботу о наших питомцах.</p>
+                            <p><a class="full-comment" href="#carousel-comments">Далее</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/carouselBg.jpg" alt="carouselBg">
+                    <div class="carousel-caption">
+                        <div class="col-lg-3 col-md-3 col-sm-4">
+                            <img src="images/commentMan.png" alt="commentMan.png">
+                        </div>
+                        <div class="full col-lg-9 col-md-9 col-sm-8">
+                            <h2>Алексей Савостиков</h2>
+                            <br>
+                            <p>Хотим выразить огромную благодарность врачу- хирургу Мезину Андрею Владимировичу из клиники «Неболит» на Беломорской д.1, который в прямом смысле слова спас нашу собаку породы Ши- Тцу(провел гастроскопию, правильно поставил диагноз и ювелирно провел эндоскопическую операцию по извлечению инородного тела из кардиального отдела пищевода).
+                                <br>Если вы не хотите доверять свое животное некомпетентным врачам и затягивать драгоценное время, обращайтесь сразу к нему.
+                                <br>Спасибо Вам ОГРОМНОЕ Андрей Владимирович!!! Ши-Тцу Поля :-)</p>
+                            <p><a class="full-comment" href="#carousel-comments">Свернуть</a></p>
+                        </div>
+                        <div class="preview col-lg-9 col-md-9 col-sm-8">
+                            <h2>Алексей Савостиков</h2>
+                            <br>
+                            <p>Хотим выразить огромную благодарность врачу- хирургу Мезину Андрею Владимировичу из клиники «Неболит» на Беломорской д.1, который в прямом смысле слова спас нашу собаку породы Ши- Тцу.</p>
+                            <p><a class="full-comment" href="#carousel-comments">Далее</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-comments" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-comments" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="ninth-list">
+        <h1>Мы ждем Вас и Вашего питомца!</h1>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- scripts -->
+	<script src="js/scripts.js"></script>
+    <!-- LiveReload -->
+    <script>
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+</body>
+
+</html>
